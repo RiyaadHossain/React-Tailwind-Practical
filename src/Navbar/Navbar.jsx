@@ -18,7 +18,7 @@ const Navbar = () => {
           className={`w-6 h-6 lg:hidden`}>
         {open ? <XIcon/> : <MenuIcon />}
       </div>
-          <ul className={`md:flex w-full duration-500 ease-in-out justify-center items-center bg-blue-300 py-4 lg:static  absolute ${open ? 'top-14' : 'top-[-520px]'}`}>
+          <ul className={`lg:flex w-full duration-500 ease-in-out justify-center items-center bg-blue-300 py-5 lg:static  absolute ${open ? 'top-14' : 'top-[-520px]'}`}>
           {navLink.map((route) => (
         <NavLink key={route.id} route={route} />
       ))}
